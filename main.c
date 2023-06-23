@@ -46,7 +46,7 @@ error_usage();
 file = fopen(argv[1], "r");
 if (!file)
 file_error(argv[1]);
-while (getline(&buffer, &buf_len, file) ! = -1)
+while (getline(&buffer, &buf_len, file) != -1)
 {
 if (status)
 break;
