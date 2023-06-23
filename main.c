@@ -13,7 +13,6 @@ void error_usage(void)
 fprintf(stderr, "USAGE: monty file\n");
 exit(EXIT_FAILURE);
 }
-
 /**
  * file_error - prints file error message and exits
  * @argv: argv given by manin
@@ -25,7 +24,6 @@ void file_error(char *argv)
 fprintf(stderr, "Error: Can't open file %s\n", argv);
 exit(EXIT_FAILURE);
 }
-
 int status = 0;
 /**
  * main - entry point
@@ -48,7 +46,7 @@ error_usage();
 file = fopen(argv[1], "r");
 if (!file)
 file_error(argv[1]);
-while (getline(&buffer, &buf_len, file) ( ! = -1))
+while (getline(&buffer, &buf_len, file) ! = -1)
 {
 if (status)
 break;
